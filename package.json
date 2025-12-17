@@ -4,6 +4,9 @@
   "description": "MCP server for Zephyr Scale Cloud API - Manage projects, folders, test cases, test steps, and test scripts",
   "main": "src/index.js",
   "type": "module",
+  "bin": {
+    "mcp-zephyr": "src/index.js"
+  },
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
