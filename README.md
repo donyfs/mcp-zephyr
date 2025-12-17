@@ -97,6 +97,38 @@ npm start
 # Configuration will be automatically discovered
 ```
 
+## 🧰 Testing Individual Tools
+
+For development and debugging, you can test individual tools without running the full MCP server using the `test-tools.js` script:
+
+### List Available Tools
+```bash
+node test-tools.js --list
+```
+
+### Test a Tool
+```bash
+# Simple tool without arguments
+node test-tools.js list_projects
+
+# Tool with arguments (pass JSON)
+node test-tools.js list_projects '{"maxResults": 10}'
+
+# Get specific project
+node test-tools.js get_project '{"projectId": "PROJ1"}'
+
+# Create a test case
+node test-tools.js create_test_case '{"name": "Login Test", "projectKey": "PROJ"}'
+
+# List test cases with filtering
+node test-tools.js list_test_cases '{"projectKey": "PROJ", "maxResults": 5}'
+
+# Get reference data
+node test-tools.js get_reference_data
+```
+
+**Note**: Make sure your `.env` file is configured with `ZEPHYR_API_TOKEN` before running test tools.
+
 ## 📝 Usage Examples
 
 ### Basic Project Operations
