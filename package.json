@@ -1,6 +1,6 @@
 {
   "name": "@donyfs/mcp-zephyr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Zephyr Scale Cloud API - Manage projects, folders, test cases, test steps, and test scripts",
   "main": "src/index.js",
   "type": "module",
